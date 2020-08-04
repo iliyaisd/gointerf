@@ -6,6 +6,10 @@ import(
 
 type AsyncRunner struct {}
 
+func NewAsyncRunner() AsyncRunner {
+    return AsyncRunner{}
+}
+
 func (ar AsyncRunner) Run(w scheduler.Worker) {
-    w.Run()
+    go w.Do()
 }

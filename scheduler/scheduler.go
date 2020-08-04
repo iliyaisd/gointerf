@@ -14,6 +14,7 @@ type Worker interface {
     Do()
 }
 
-func (s Scheduler) Schedule(r Runner, w Worker) {
+func (s Scheduler) Schedule(r Runner, w Worker) error {
     r.Run(w)
+    return nil
 }

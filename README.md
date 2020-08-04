@@ -1,0 +1,1 @@
+This is a proposal of an alternative components structure for [this article](https://medium.com/swlh/when-an-interface-depends-on-another-interface-in-go-a32d988cd21e). 
